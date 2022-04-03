@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Listados</title>
+		<link href="./css/listado.css" media="all" type="text/css" rel="stylesheet">
+		<link rel="icon" href="./img/favicon.png">
+	</head>	
+	<body>
+		<div class="menu">
+			<a href="./index.html"><img src="./img/home.png" alt="home"></a>
+			<div class="opciones">
+				<div class="caja2"><a href="./modelo_e-r.html">Modelo E/R y Relacional</a></div>
+				<div class="caja"><a href="./creates.html">Creates</a></div>
+				<div class="caja"><a href="./inserts.html">Inserts</a></div>
+				<div class="caja"><a href="./busquedas.html">Busquedas</a></div>
+				<div class="caja"><a href="./listados.html">Listados</a></div>
+			</div>
+		</div>
+
+	<!-- MENU -->
+
+    <div class="info">
+        <h1>LISTADOS</h1>
+		<!-- LISTADO 1 -->
+        <br>
+		<h3>Listado 1</h3>
+		<hr>
+		<br>
+		<div class="contenido">
+			<p>
+			En el listado 1 podemos observar que el linesize está ajustado para que salga centrado al
+			mostrar todos los datos. En el SELECT podemos observar que queremos ver todas las
+			columnas de la <a href="./img/create_libro.png">tabla libro</a> pero en vez de poner asterisco para verlas todas, los ponemos uno a uno
+			ya que después de poner el atributo entre comillas le pondremos como se llamará esa tabla
+			para que al mostrarla salga son esa denominación.
+				<br>
+				<a href="./img/listado1_codigo.png"><img src="./img/listado1_codigo.png" alt="listado1_codigo"></a>
+			</p>
+            <div class="ima">
+				<a href="./img/listado1.png"><img src="./img/listado1.png" alt="listado1"></a>
+			</div>
+		</div>
+		<!-- LISTADO 2 -->
+        <br>
+		<h3>Listado 2</h3>
+		<hr>
+		<br>
+		<div class="contenido">
+			<p>
+				En el listado 2 queremos poder ver todos los libros
+				que ha escrito cada autor, para ello, en el SELECT seleccionaremos los elementos a mostrar que será el nombre
+				del autor que está renombrado con “AUTOR”, el titulo del libro con “LIBRO” y la fecha de
+				edición con “FECHA ED”. En el FROM le pones las tablas seguidos de una vocal para identificar
+				las columnas de dicha tabla con X.columna, en el WHERE unimos las tablas y finalmente
+				ordenamos por el nombre del autor.
+				<br>
+				<a href="./img/listado2_codigo.png"><img src="./img/listado2_codigo.png" alt="listado2_codigo"></a>
+			</p>
+            <div class="ima">
+				<a href="./img/listado2.png"><img src="./img/listado2.png" alt="listado2"></a>
+			</div>
+		</div>
+		<!-- LISTADO 3 -->
+        <br>
+		<h3>Listado 3</h3>
+		<hr>
+		<br>
+		<div class="contenido">
+			<p>
+				En el listado 3 queremos mostrar que libros ha publicado cada editorial para ello en el SELECT
+				seleccionaremos el nombre de la tabla editorial y lo renombraremos con “EDITORIAL” y el
+				título de la tabla libro, en el FROM pondremos dichas tablas y en el WHERE la unión de tablas
+				para finalmente ordenarlo por el nombre de las editoriales.
+				<br>
+				<a href="./img/listado3_codigo.png"><img src="./img/listado3_codigo.png" alt="listado3_codigo"></a>
+			</p>
+            <div class="ima">
+				<a href="./img/listado3.png"><img src="./img/listado3.png" alt="listado3"></a>
+			</div>
+		</div>
+		<!-- LISTADO 4 -->
+        <br>
+		<h3>Listado 4</h3>
+		<hr>
+		<br>
+		<div class="contenido">
+			<p>
+				En el listado 4 queremos mostrar cuantos ejemplares hay de cada libros y cuantos ejemplares
+				hay en total en la biblioteca, para ello, primero contaremos todos los que hay de tal forma que
+				pondremos un COMPUTE SUM y le daremos de titulo “TOTAL”, diremos la columna y la
+				tablas. Luego en el SELECT seleccionaremos los títulos de la tablas autor, y los contaremos con
+				la función COUNT que estará renombrada con “EJEMPLARES”, en el FROM seleccionamos las
+				tablas y en el WHERE uniremos dichas tablas, y agruparemos por libro.
+				<br>
+				<a href="./img/listado4_codigo.png"><img src="./img/listado4_codigo.png" alt="listado4_codigo"></a>
+			</p>
+            <div class="ima">
+				<a href="./img/listado4.png"><img src="./img/listado4.png" alt="listado4"></a>
+			</div>
+		</div>
+		<!-- LISTADO 5 -->
+        <br>
+		<h3>Listado 5</h3>
+		<hr>
+		<br>
+		<div class="contenido">
+			<p>
+				En el listado 5 queremos mostrar que socios han sido morosos y sus números de teléfonos,
+				para ello, en el SELECT seleccionamos el nombre que lo renombraremos como “NOMBRE DEL
+				MOROSO” y la columna de teléfono, le diremos en el FROM la tablas que es socio y el en
+				WHERE compararemos que la fecha de devolver el libro no supere a la fecha de cuando
+				devolvió el libro.				
+				<br>
+				<a href="./img/listado5_codigo.png"><img src="./img/listado5_codigo.png" alt="listado5_codigo"></a>
+			</p>
+            <div class="ima">
+				<a href="./img/listado5.png"><img src="./img/listado5.png" alt="listado5"></a>
+			</div>
+		</div>
+		<!-- LISTADO 6 -->
+        <br>
+		<h3>Listado 6</h3>
+		<hr>
+		<br>
+		<div class="contenido">
+			<p>
+				En el listado 6 queremos mostrar los libros que más se han prestado, para ello, en el SELECT
+				seleccionamos los títulos que lo renombraremos con “LIBRO” y lo contaremos con la función
+				de COUNT que lo renombraremos con “TOTALES”, en el FROM seleccionamos las tabla, en el
+				WHERE la unión de tablas, lo agruparemos por titulo y seleccionaremos que nos saque los que
+				hayan prestado más de 3 veces.				
+				<br>
+				<a href="./img/listado6_codigo.png"><img src="./img/listado6_codigo.png" alt="listado6_codigo"></a>
+			</p>
+            <div class="ima">
+				<a href="./img/listado6.png"><img src="./img/listado6.png" alt="listado6"></a>
+			</div>
+		</div>
+		<!-- LISTADO 7 -->
+        <br>
+		<h3>Listado 7</h3>
+		<hr>
+		<br>
+		<div class="contenido">
+			<p>
+				En el listado 7 queremos mostrar que socios han cogido un determinado libro y si este lo ha
+				cogido repetidas veces saldrá su nombre repetido, para ello, en el SELECT seleccionaremos los
+				títulos de los libro renombrado con “LIBRO” y el nombre de los socios, en el FROM
+				seleccionamos las tablas y otra más que será la tablas presta para poder hacer en bien en el WHERE la
+				unión de tablas.
+				<br>
+				<a href="./img/listado7_codigo.png"><img src="./img/listado7_codigo.png" alt="listado7_codigo"></a>
+			</p>
+            <div class="ima">
+				<a href="./img/listado7.png"><img src="./img/listado7.png" alt="listado7"></a>
+			</div>
+		</div>
+		
+	</div>
+
+    	<!-- FOOTER -->
+	<br>
+	<br>
+	<div class="footer">
+		<h1>Guillermo Moreno</h1>
+		<h3>Proyecto SQL de Base de Datos</h3>
+	</div>
+
+	</body>
+</html>

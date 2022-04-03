@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Creates</title>
+		<link href="./css/creates.css" media="all" type="text/css" rel="stylesheet">
+		<link rel="icon" href="./img/favicon.png">
+	</head>	
+	<body>
+		<div class="menu">
+			<a href="./index.html"><img src="./img/home.png" alt="home"></a>
+			<div class="opciones">
+				<div class="caja2"><a href="./modelo_e-r.html">Modelo E/R y Relacional</a></div>
+				<div class="caja"><a href="./creates.html">Creates</a></div>
+				<div class="caja"><a href="./inserts.html">Inserts</a></div>
+				<div class="caja"><a href="./busquedas.html">Busquedas</a></div>
+				<div class="caja"><a href="./listados.html">Listados</a></div>
+			</div>
+		</div>
+
+	<!-- MENU -->
+
+    <div class="info">
+        <h1>CREATES</h1>
+		<!-- AUTOR -->
+        <br>
+		<h3>TABLA AUTOR</h3>
+		<hr>
+		<br>
+		<div class="contenido">
+			<div class="ima">
+				<a href="./img/create_autor.png"><img src="./img/create_autor.png" alt="create_autor"></a>
+			</div>
+			<p>
+				En la tabla de autor vamos a asignarle los atributos que previamente vimos tanto en el 
+				<a href="./modelo_e-r.html">modelo entidad/relación</a> y en el modelo relacional.
+				Lo primero es asignarle su clave principal que es ID y será tipo VARCHAR de longitud 7 con el siguiente formato (XXXXXXA), en el nombre
+				será también de tipo VARCHAR de longitud 20, el apellido igual que el nombre pero la longitud
+				esta vez será de 25, en nacionalidad también será VARCHAR de longitud 20 al igual que el
+				nombre. En la última línea definimos a la clave principal de la tabla que es el ID.
+			</p>
+		</div>
+		<!-- TEMA -->
+		<br>
+		<h3>TABLA TEMA</h3>
+		<hr>
+		<br>
+		<div class="contenido">
+			<div class="ima">
+				<a href="./img/create_tema.png"><img src="./img/create_tema.png" alt="create_tema"></a>
+			</div>
+			<p>
+				En la tabla de autor vamos a asignarle los atributos que previamente vimos tanto en el 
+				<a href="./modelo_e-r.html">modelo entidad/relación</a> y en el modelo relacional.
+				Lo primero es asignarle su clave principal que es Código y será tipo VARCHAR de longitud 7 con
+				el siguiente formato (AXXXXXX), en el nombre será también de tipo VARCHAR de longitud 15 y
+				tendrá una descripción de tipo VARCHAR de longitud 75 ya que será una breve descripción
+				.En la última línea definimos a la clave principal de la tabla que es el Código.
+			</p>
+		</div>
+		<!-- EDITORIAL -->
+		<br>
+		<h3>TABLA EDITORIAL</h3>
+		<hr>
+		<br>
+		<div class="contenido">
+			<div class="ima">
+				<a href="./img/create_editorial.png"><img src="./img/create_editorial.png" alt="create_editorial"></a>
+			</div>
+			
+			<p>
+				En la tabla de autor vamos a asignarle los atributos que previamente vimos tanto en el 
+				<a href="./modelo_e-r.html">modelo entidad/relación</a> y en el modelo relacional.
+				Lo primero es asignarle su clave principal que es CIF y será tipo VARCHAR de longitud 10 con el
+				siguiente formato (XXXXXXXXXA), en el nombre será también de tipo VARCHAR de longitud 20,
+				la dirección será llamada DIR, será de tipo VARCHAR y tendrá longitud 30, también tendrá un
+				número de teléfono de tipo NUMBER de longitud 9. En la última línea definimos a la clave
+				principal de la tabla que es el CIF.	
+			</p>
+		</div>
+		<!-- LIBRO -->
+		<br>
+		<h3>TABLA LIBRO</h3>
+		<hr>
+		<br>
+		<div class="contenido">
+			<div class="ima">
+				<a href="./img/create_libro.png"><img src="./img/create_libro.png" alt="create_libro"></a>
+			</div>
+			<p>
+				En la tabla de autor vamos a asignarle los atributos que previamente vimos tanto en el 
+				<a href="./modelo_e-r.html">modelo entidad/relación</a> y en el modelo relacional.
+				Lo primero es asignarle su clave principal que es ISBN y será tipo VARCHAR de longitud 13 con el
+				siguiente formato (AA-XXXXXXXXXX), el título de tipo VARCHAR de longitud 40, ya que hay
+				libros con títulos largos, tanto el CIF como el código tiene tanto el mismo tipo de dato y de
+				longitud que en sus tablas ya que en las últimas líneas podemos ver que son claves ajenas que
+				llaman a la tabla de donde corresponde.
+			</p>
+		</div>
+		<!-- ESCRIBE -->
+		<br>
+		<h3>TABLA ESCRIBE</h3>
+		<hr>
+		<br>
+		<div class="contenido">
+			<div class="ima">
+				<a href="./img/create_escribe.png"><img src="./img/create_escribe.png" alt="create_escribe"></a>
+			</div>
+			
+			<p>
+				En la tabla de autor vamos a asignarle los atributos que previamente vimos tanto en el 
+				<a href="./modelo_e-r.html">modelo entidad/relación</a> y en el modelo relacional.
+				Esta tabla tiene los atributos como clave principal el ISBN, el cual lo hereda de la tabla libro con su tipo de
+				dato y longitud, el atributo ID es tipo VARCHAR de longitud 7 con el formato (XXXXXXA) y esta
+				claves son claves ajenas, una de la tabla libro y otra de la tabla autor.	
+			</p>
+		</div>
+	<!-- EJEMPLAR -->
+	<br>
+	<h3>TABLA EJEMPLAR</h3>
+	<hr>
+	<br>
+	<div class="contenido">
+		<div class="ima">
+			<a href="./img/create_ejemplar.png"><img src="./img/create_ejemplar.png" alt="create_ejemplar"></a>
+		</div>
+		<p>
+			En la tabla de autor vamos a asignarle los atributos que previamente vimos tanto en el 
+			<a href="./modelo_e-r.html">modelo entidad/relación</a> y en el modelo relacional.
+			Esta tabla tiene los atributos como clave principal, el ISBN el cual lo hereda de la tabla libro con
+			su tipo de dato y longitud en forma de clave ajena, esto esta especificado en la última
+			Constraint, el atributo N_Ejemplar que es tipo NUMBER de longitud 3 con el formato (XXX),
+			luego tendrá la fecha de edición (F_Edicion) que será de tipo date y un estado que podrá ser
+			de 3 tipos: "Bien", "Mal" y "Nuevo".
+		</p>
+	</div>
+	<!-- TIPO_SOCIO -->
+	<br>
+	<h3>TABLA TIPO SOCIO</h3>
+	<hr>
+	<br>
+	<div class="contenido">
+		<div class="ima">
+			<a href="./img/create_tipo_socio.png"><img src="./img/create_tipo_socio.png" alt="create_tipo_socio"></a>
+		</div>
+		<p>
+			En la tabla de autor vamos a asignarle los atributos que previamente vimos tanto en el 
+			<a href="./modelo_e-r.html">modelo entidad/relación</a> y en el modelo relacional.
+			Esta tabla tiene como clave principal el código de socio de tipo VARCHAR con longitud 4 y su
+			formato será (XXXA), tendrá otro atributo que será la descripción de dicho tipo de socio que
+			podrá ser de 3 tipos: “Infantil”, “Adulto” e “Institucional”.	
+		</p>
+	</div>
+	<!-- SOCIO -->
+	<br>
+	<h3>TABLA SOCIO</h3>
+	<hr>
+	<br>
+	<div class="contenido">
+		<div class="ima">
+			<a href="./img/create_socio.png"><img src="./img/create_socio.png" alt="create_socio"></a>
+		</div>
+		<p>
+			En la tabla de autor vamos a asignarle los atributos que previamente vimos tanto en el 
+			<a href="./modelo_e-r.html">modelo entidad/relación</a> y en el modelo relacional.
+			Esta tabla tiene como clave principal el número de socio de tipo VARCHAR de longitud 5 con el
+			siguiente formato (XXXXA), también tendrá un nombre de tipo parchar con longitud 25,
+			además tendrá un teléfono de tipo NUMBER de longitud 6 una fecha de nacimiento de tipo
+			date y un código de socio que será clave ajena de la tabla tipo socio.
+	</div>
+	<!-- PRESTA -->
+	<br>
+	<h3>TABLA PRESTA</h3>
+	<hr>
+	<br>
+	<div class="contenido">
+		<div class="ima">
+			<a href="./img/create_presta.png"><img src="./img/create_presta.png" alt="create_presta"></a>
+		</div>
+		<p>
+			En la tabla de autor vamos a asignarle los atributos que previamente vimos tanto en el 
+			<a href="./modelo_e-r.html">modelo entidad/relación</a> y en el modelo relacional.
+			Esta tabla tiene como clave principal: el número de socio, el ISBN y el número de ejemplares que
+			estas serán clave ajena con sus respectivos tipos y longitudes. ISBN y ejemplar serán clave
+			ajenas de la tabla ejemplar y número de socio de la tabla socio. Fecha inicio será la clave principal propia de la tabla que será de
+			tipo DATE también tendrá atributos fecha fin y fecha devuelto ambos de tipo DATE.				
+		</p>
+	</div>
+
+    </div>
+
+    	<!-- FOOTER -->
+	<br>
+	<br>
+	<div class="footer">
+		<h1>Guillermo Moreno</h1>
+		<h3>Proyecto SQL de Base de Datos</h3>
+	</div>
+
+	</body>
+</html>

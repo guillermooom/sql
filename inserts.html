@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Inserts</title>
+		<link href="./css/inserts.css" media="all" type="text/css" rel="stylesheet">
+		<link rel="icon" href="./img/favicon.png">
+	</head>	
+	<body>
+		<div class="menu">
+			<a href="./index.html"><img src="./img/home.png" alt="home"></a>
+			<div class="opciones">
+				<div class="caja2"><a href="./modelo_e-r.html">Modelo E/R y Relacional</a></div>
+				<div class="caja"><a href="./creates.html">Creates</a></div>
+				<div class="caja"><a href="./inserts.html">Inserts</a></div>
+				<div class="caja"><a href="./busquedas.html">Busquedas</a></div>
+				<div class="caja"><a href="./listados.html">Listados</a></div>
+			</div>
+		</div>
+
+	<!-- MENU -->
+
+    <div class="info">
+        <h1>INSERTS</h1>
+		<!-- AUTOR -->
+        <br>
+		<h3>INSERT INTO AUTOR</h3>
+		<hr>
+		<br>
+		<div class="contenido">
+			<p>
+				Aquí podemos ver los inserts que van a ir a la tabla de autor que según las claves y formato
+				que previamente le dimos les insertaremos una serie de autores que serán tanto españoles
+				como extranjeros, también serán actuales y contemporáneos. A simple vista no te sonarán más
+				que los autores españoles y algún que otro autor suelto, pero en el
+				<a href="./img/listado2.png">segundo listado </a> veremos quien escribió cada libro los cuales son más conocidos.
+			</p>
+            <div class="ima">
+				<a href="./img/insert_autor.png"><img src="./img/insert_autor.png" alt="insert_autor"></a>
+			</div>
+		</div>
+		<!-- TEMA -->
+		<br>
+		<h3>INSERT INTO TEMA</h3>
+		<hr>
+		<br>
+		<div class="contenido">
+			<p>
+				En este Insert de la tabla tema podemos observar que, a pesar de ser pocas líneas de código,
+				son un poco largas ya que los campos de esta tabla son el código, el nombre y la
+				descripción, <a href="./img/create_tema.png">ver create</a>, esta última haciendo
+				que cada insert sea líneas de código largas, donde en el campo de descripción tiene una
+				longitud de 75 carácteres y es tipo VARCHAR como podemos ver en su correspondiente create
+				anteriormente mencionado.			
+			</p>
+            <div class="ima">
+				<a href="./img/insert_tema.png"><img src="./img/insert_tema.png" alt="insert_tema"></a>
+			</div>
+		</div>
+		<!-- EDITORIAL -->
+		<br>
+		<h3>INSERT INTO EDITORIAL</h3>
+		<hr>
+		<br>
+		<div class="contenido">			
+			<p>
+				En el siguiente insert vemos que tenemos un total de 7 editoriales todas con su código que las
+				identifica y diferencia de las demás, su nombre no suele ser muy largo, una calle
+				que todas empiezan por C. para abreviar Calle y tendrán un teléfono de contacto. 				
+			</p>
+			
+			<div class="ima">
+				<a href="./img/insert_editorial.png"><img src="./img/insert_editorial.png" alt="insert_editorial"></a>
+			</div>
+		</div>
+		<!-- LIBRO -->
+		<br>
+		<h3>INSERT INTO LIBRO</h3>
+		<hr>
+		<br>
+		<div class="contenido">
+			<p>
+				En este insert podemos apreciar que tenemos un total de 10 libros, los cuales tienen dos letras y
+				una combinación de 10 números separados con un guión de las letras, tiene su título en el que
+				podemos apreciar que no se repite ninguno, tras su título tendrá el código de la editorial del
+				libro, y por último tendrá el identificador del tema al que pertenecen.
+			</p>
+			
+			<div class="ima">
+				<a href="./img/insert_libro.png"><img src="./img/insert_libro.png" alt="insert_libro"></a>
+			</div>
+		</div>
+		<!-- ESCRIBE -->
+		<br>
+		<h3>INSERT INTO ESCRIBE</h3>
+		<hr>
+		<br>
+		<div class="contenido">
+			<p>
+				En el siguiente insert podemos ver que solo hay 2 campos, uno es el libro y otro el autor.
+				Podemos apreciar que hay libros que salen 2 veces, esto se debe a que un libro lo puede
+				escribir más de una persona como es el caso de los libros “KW-5566778899” y
+				“PI-9900112233” que ambos libros los escribieron los hermanos Grimm.
+	
+			</p>
+			
+			<div class="ima">
+				<a href="./img/insert_escribe.png"><img src="./img/insert_escribe.png" alt="insert_escribe"></a>
+			</div>
+		</div>
+	<!-- EJEMPLAR -->
+	<br>
+	<h3>INSERT INTO EJEMPLAR</h3>
+	<hr>
+	<br>
+	<div class="contenido">
+		<p>
+			En este insert podemos ver todos los ejemplares de los que dispone la biblioteca que son un total
+		de 26 ejemplares, siendo Alicia en el país de las maravillas “DR-4455667788” es el libro con más
+		ejemplares con un total 4, esto lo podemos ver en el <a href="img/listado4.png">listado de
+		ejemplares</a>. Cada ejemplar empieza por 111 y tienen también el estado del ejemplar que
+		puede ser: “Nuevo”, “Mal” y “Bien”.
+
+		</p>
+		
+		<div class="ima">
+			<a href="./img/insert_ejemplar.png"><img src="./img/insert_ejemplar.png" alt="insert_ejemplar"></a>
+		</div>
+	</div>
+	<!-- TIPO_SOCIO -->
+	<br>
+	<h3>INSERT INTO TIPO SOCIO</h3>
+	<hr>
+	<br>
+	<div class="contenido">
+		<p>
+			En el siguiente insert podemos ver los tipos de los socios que hay y sus respectivos
+			códigos. Estos socios pueden ser de 3 tipos: “Infantil”, “Adulto” e “Institucional”.
+		</p>
+		
+		<div class="ima">
+			<a href="./img/insert_tipo_socio.png"><img src="./img/insert_tipo_socio.png" alt="insert_tipo_socio"></a>
+		</div>
+	</div>
+	<!-- SOCIO -->
+	<br>
+	<h3>INSERT INTO SOCIO</h3>
+	<hr>
+	<br>
+	<div class="contenido">
+		<p>
+			En este insert podemos ver todos los socios registrados en la biblioteca identificados con un
+			código propio del socio, seguido de su nombre y su número de teléfono, nos interesa tener un
+			teléfono de contacto por si alguno de los socio es un moroso y roba algún libro esto se ve en el
+			<a href="./img/listado5.png">listado de morosos</a>, la fecha de nacimiento y el tipo de socio que es según su edad.
+
+		</p>
+		
+		<div class="ima">
+			<a href="./img/insert_socio.png"><img src="./img/insert_socio.png" alt="insert_socio"></a>
+		</div>
+	</div>
+	<!-- PRESTA -->
+	<br>
+	<h3>INSERT INTO PRESTA</h3>
+	<hr>
+	<br>
+	<div class="contenido">
+		<p>
+			En el siguiente insert podemos ver todos libros prestados de la biblioteca por su código, los
+			socios que cogieron también salen representados con un código, el libro que cogieron va
+			asociado al numero de 3 cifras que determina el estado de dicho ejemplar y que ejemplar se
+			llevaron y por último tenemos 3 fechas: fecha de cuando se prestó el libro, fecha de
+			devolución de dicho libro y la fecha de cuando lo devolvió,  si alguno lo ha robado o se ha
+			pasado de fecha saldrá en el <a href="./img/listado5.png">listado de morosos</a>.							
+		</p>
+		
+		<div class="ima">
+			<a href="./img/insert_presta.png"><img src="./img/insert_presta.png" alt="insert_presta"></a>
+		</div>
+	</div>
+	</div>
+
+    	<!-- FOOTER -->
+	<br>
+	<br>
+	<div class="footer">
+		<h1>Guillermo Moreno</h1>
+		<h3>Proyecto SQL de Base de Datos</h3>
+	</div>
+
+	</body>
+</html>

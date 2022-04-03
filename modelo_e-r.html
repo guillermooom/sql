@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Modelo E/R</title>
+		<link href="./css/modelo_e-r.css" media="all" type="text/css" rel="stylesheet">
+		<link rel="icon" href="./img/favicon.png">
+	</head>	
+	<body>
+		<div class="menu">
+			<a href="./index.html"><img src="./img/home.png" alt="home"></a>
+			<div class="opciones">
+				<div class="caja2"><a href="./modelo_e-r.html">Modelo E/R y Relacional</a></div>
+				<div class="caja"><a href="./creates.html">Creates</a></div>
+				<div class="caja"><a href="./inserts.html">Inserts</a></div>
+				<div class="caja"><a href="./busquedas.html">Busquedas</a></div>
+				<div class="caja"><a href="./listados.html">Listados</a></div>
+			</div>
+		</div>
+
+	<!-- MENU -->	
+		
+		<!-- MODELO E/R -->	
+
+		<div class="info">
+			<h1>MODELO E/R</h1>
+				<br>
+				<br>
+				<br>
+				<a href="./img/modelo_e-r.png"><img src="./img/modelo_e-r.png" alt="modelo_e-r"></a>
+				<br>
+				<br>
+				<br>
+			<h3>Explicacion</h3>
+			<hr>
+			<br>
+			<p>
+				Esta sería la representación del modelo Entidad/Relación de la base de datos de nuestra
+				Biblioteca, en la cual podemos apreciar las entidades con sus respectivos atributos y
+				sus relaciones de dichas entidades. Algo a tener en cuenta es que las claves primarias
+				están subralladas para poder diferenciarlo de los atributos.
+				<br>
+				<br>
+				Para que un libro exista se debe dar que tenga una sola editorial, pero esta editorial
+				puede publicar uno o varios libros. También debe existir uno o varios autores que
+				escriban dicho libro, pero un autor puede escribir muchos libros. Y un libro solo puede
+				pertenecer a un tema y este tema puede abarcar un gran número de libros.
+				<br>
+				<br>
+				Este libro tiene uno o varios ejemplares, ya que si no existiera un libro, no podría existir sus
+				ejemplares, dichos ejemplares pueden ser prestados a los socios que estén registrados en
+				la biblioteca y estos socios están clasificados por un tipo socio, y que a su vez pueden ser
+				de 3 tipos (adulto, infantil e institucional).
+			</p>
+		</div>
+
+		<!-- MODELO RELACIONAL -->
+
+		<div class="info">
+			<h1>MODELO RELACIONAL</h1>
+				<br>
+				<br>
+				<br>
+			<a href="./img/modelo_relacional.png"><img src="./img/modelo_relacional.png" alt="modelo_relacional"></a>
+				<br>
+				<br>
+				<br>
+			<h3>Explicacion</h3>
+			<hr>
+			<br>
+			<p>
+				Aquí podemos observar la representación del modelo Relacional, en el cual podemos ver
+				las entidades del modelo Entidad/Relación y sus atributos, las claves principales del modelo
+				entidad/relación las cuales están subrayadas, en este modelo
+				podemos ver que están indicadas igual pero tiene las sigas CP (Clave Principal).
+				<br>
+				<br>
+				También podemos observar que hay otros atributos que están subrayados, estos tienen dos
+				siglas debajo, que son: CA (Claves Ajena) y NN (No Nulo). Estas siglas indican que es clave
+				ajena de otra entidad, señalando que están relacionadas por una relación N:1 y la entidad que
+				posee la N, o dicho de otra forma, la entidad que en la relación pueda darse mas de una vez. Las
+				siglas de no nulo indican que ese valor no puede ser NULL, es decir, que todos los datos de ese
+				atributo tienen que ser datos válidos.
+				<br>
+				<br>
+				Debajo de libro podemos observar que hay una relación que no aparecen como entidad en el
+				modelo entidad relación y que todos los atributos son claves ajena y clave primaria, esta
+				relación es una N:M en el modelo entidad relación y esta lleva las claves primarias de ambas
+				relaciones y las tiene como claves ajenas ya que no son suyas y no es una entidad y ambas
+				apuntan a la entidad de donde provienen.
+				<br>
+				Puede dar el caso de que en la relación N:M exista atributos propios de ella, esto se puede observar
+				ver en la relación de presta que tiene atributos y uno de ellos es clave principal sin pertenecer 
+				a la clave ajena.
+				<br>
+				<br>
+				También podemos observar la débil en identificación (ID) del modelo entidad/relación que sale
+				representada entre libro y ejemplar libro, esta se representa en el modelo relacional poniendo
+				la clave principal de la entidad de donde proviene como clave ajena en su propia clave
+				primaria, lo que hace que tenga una clave ajena apuntando a la entidad de donde proviene y
+				luego su propia clave primaria.
+
+			</p>
+		</div>
+
+	<!-- FOOTER -->
+	<br>
+	<br>
+	<div class="footer">
+		<h1>Guillermo Moreno</h1>
+		<h3>Proyecto SQL de Base de Datos</h3>
+	</div>
+
+	</body>
+</html>
